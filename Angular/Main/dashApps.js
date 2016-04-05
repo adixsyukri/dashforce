@@ -2,7 +2,7 @@
 	'use strict';
 
 	angular
-	.module('dashApp',['ngRoute','permission','ui.router','ngCookies','toastr'])
+	.module('dashApp',['permission','ui.router','ngCookies','toastr'])
 	.run(dfPermission)
 
 	dfPermission.$inject = ['Permission','PermissionStore','$cookies','User','$location'];
