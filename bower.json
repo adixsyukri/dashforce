@@ -47,6 +47,6 @@
     "angular-cookies":"~1.5.0",
     "angular-permission":"~2.0.9",
     "moment":"latest",
-    "angular-toastr":"latest",
+    "angular-toastr":"latest"
   }
 }
