@@ -18,6 +18,6 @@ RUN
 To Build
 ========
     
-    git clone dashforce
+    git clone https://github.com/adixsyukri/dashforce.git
     cd dashforce
     grunt
