@@ -48,7 +48,5 @@
     "angular-permission":"~2.0.9",
     "moment":"latest",
     "angular-toastr":"latest",
-    "requirejs": "latest",
-    "requirejs-domready": "latest"
   }
 }
