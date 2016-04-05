@@ -1,0 +1,40 @@
+(function (){
+	'use strict';
+
+	angular
+		.module('dashApp')
+		.config(route);
+
+	var state = 'default', //example 'home'
+		state_url = '/', //example '/home'
+		navbar_template_url = '', //example 'template/nav.html'
+		body_template_url = '', //example 'Angular/Controller/Home/home.html'
+		controller_name_as = '', //example 'homeController as hc'
+		permission_array = [], // example ['Staff','Management','Finance','Admin']
+		redirect_if_no_permission = ''; //example 'logout'
+
+	route.$inject = ['$stateProvider'];
+	function route($stateProvider){
+
+		$stateProvider
+			.state(state, {
+				url: state_url,
+				views: {
+					'navbar': {
+						templateUrl:navbar_template_url
+					},
+					'body': {
+						templateUrl: body_template_url,
+						controller: controller_name_as
+					}
+				},
+				data: {
+					permissions: {
+						only: permission_array,
+						redirectTo: redirect_if_no_permission
+					}
+				}
+			})
+	}
+
+})();

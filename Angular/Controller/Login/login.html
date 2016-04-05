@@ -1,0 +1,66 @@
+<style>
+    .login-panel {
+        margin-top: 5%;
+    }
+    .image-header {
+        margin-top: 1%;
+        //margin: auto;
+    }
+    
+    .img-top {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    
+    body {
+        #background-color: #f8f8f8;
+        background-color: #000000;
+    }
+    .font-gold{
+        color:#f7dd7a;
+    }
+</style>
+<div class="row-clearfix img-top">
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-4 col-md-offset-4 image-header">
+        <img class="img-responsive" src="content/img/logo_small.png" />
+    </div>
+</div>
+<div class="row-clearfix">
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-4 col-md-offset-4">
+        
+        <div class="alert alert-warning" ng-if='lc.loginError'>
+          <span>Wrong email or password!</span>
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        </div>
+        <div class="login-panel panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">DashForce Sign In</h3>
+            </div>
+            <div class="panel-body">
+                <form role="form" ng-submit="lc.submit()">
+                    <fieldset>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="E-mail" name="uname" type="email" ng-model="lc.user.uname" ng-required="true" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" placeholder="Password" name="pword" type="password" ng-model="lc.user.pword" ng-required="true">
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                Forgot Password? <a href="">Click here</a>
+                            </label>
+                        </div>
+                        <!-- Change this to a button or input when using this as a form -->
+                        <input type="submit" class="btn btn-lg btn-success btn-block" value="Login"/>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="row-clearfix">
+            <div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 font-gold text-center">Powered by</div> 
+                <div class="col-md-6">DashForce</div>
+            </div>
+        </div>
+    </div>
+</div>

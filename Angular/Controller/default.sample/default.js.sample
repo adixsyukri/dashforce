@@ -1,0 +1,14 @@
+(function () {
+	'use strict';
+
+	angular
+		.module('dashApp')
+		.controller('defaultController',Controller)
+
+
+	Controller.$inject = [];
+	function Controller(){
+		var clc = this;
+		
+	}
+})();

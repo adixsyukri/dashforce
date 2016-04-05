@@ -1,0 +1,19 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li>
+                <a ui-sref="home"><i class="fa fa-home fa-fw"></i> Home</a>
+            </li>
+            <li ng-repeat="item in sc.listUrl track by $index" ng-class="{'active':item.active}">
+                <a ng-click="sc.toggle($index)"><i class="{{item.class}}"></i> {{item.title}}<span class="fa arrow" ></span></a>
+                <ul class="nav nav-second-level" ng-class="{'collapse':!item.active,'in':item.active}">
+                    <li ng-repeat="link in item.link">
+                        <a ui-sref="{{link.state}}">{{link.title}} </a>
+                    </i>
+                </ul>
+            </li>
+        </ul>
+    </div>
+<!-- /.sidebar-collapse -->
+</div>
+<!-- /.navbar-static-side -->
