@@ -3,12 +3,11 @@
 $servername = "";
 $username = "";
 $password = "";
-$port = ;
 
 $db = "dashforce";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $db, $port);
+$conn = new mysqli($servername, $username, $password, $db);
 
 if($conn->connect_error){
 	die("Connection Failed");
