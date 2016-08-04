@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/adixsyukri/dashforce.png?label=ready&title=Ready)](https://waffle.io/adixsyukri/dashforce)
 ###Dashforce Application Setup
 
 Prerequisite
